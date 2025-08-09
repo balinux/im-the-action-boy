@@ -5,7 +5,10 @@ on:
       - master
   schedule:
     # Run At 12:00 on every day-of-month.
-    - cron: '0 12 */1 * *'
+    # - cron: '0 12 */1 * *'
+
+    # Run At 12:00 every Monday
+    - cron: '0 12 * * 1'
 
 jobs:
   build:
